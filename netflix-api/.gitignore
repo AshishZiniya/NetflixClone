@@ -1,0 +1,15 @@
+# Global ignores for Node.js projects
+node_modules/
+npm-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+.DS_Store
+
+# Frontend-specific ignores
+/netflix-ui/node_modules/
+
+# Backend-specific ignores
+/netflix-api/node_modules/
+
+varcel.json
