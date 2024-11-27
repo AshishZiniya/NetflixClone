@@ -13,3 +13,4 @@ yarn.lock
 /netflix-api/node_modules/
 
 varcel.json
+.vercel
