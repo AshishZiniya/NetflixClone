@@ -5,6 +5,7 @@ yarn-error.log*
 package-lock.json
 yarn.lock
 .DS_Store
+varcel.json
 
 # Frontend-specific ignores
 /netflix-ui/node_modules/
