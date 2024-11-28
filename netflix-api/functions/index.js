@@ -1,8 +1,8 @@
 const express = require("express");
 const cors = require("cors");
 const serverless = require('serverless-http');
-const userRoutes = require("./Routes/UserRoutes");
-const connectDB = require("./DB-Connect/DbConnect");
+const userRoutes = require("../Routes/UserRoutes");
+const connectDB = require("../DB-Connect/DbConnect");
 
 const app = express();
 
@@ -11,6 +11,6 @@ app.use(express.json());
 
 connectDB();
 
-app.use("/api/user", userRoutes);
+app.use("/.netlify/api/user", userRoutes);
 
 module.exports.handler = serverless(app);
