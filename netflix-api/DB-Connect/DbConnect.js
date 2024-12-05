@@ -10,7 +10,6 @@ const connectDB = async () => {
     }).then(() => console.log('Connected to the Database & Listening on port',process.env.PORT));
   } catch (error) {
     console.error("Error connecting to MongoDB:", error.message);
-    process.exit(1);
   }
 };
 
